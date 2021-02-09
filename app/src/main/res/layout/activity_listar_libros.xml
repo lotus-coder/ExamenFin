@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rbTodos"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLeido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leidos" />
+
+            <RadioButton
+                android:id="@+id/rbNoLeido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_leidos" />
+
+            <RadioButton
+                android:id="@+id/rbTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/todos_los_libros" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="90"
+        >
+
+            <ListView
+            android:id="@+id/lvLibros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="10"
+        >
+
+        <Button
+            android:id="@+id/btnSalirLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volver"/>
+    </LinearLayout>
+
+</LinearLayout>
